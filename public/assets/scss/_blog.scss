@@ -1,0 +1,208 @@
+@import '../scss/variables';
+/*----------------------------------------*/
+/*  17. Blog Css
+/*----------------------------------------*/
+.blog{
+    
+    &__thumb{
+        overflow: hidden;
+        & img{
+            width: 100%;
+            height: auto;
+            transform: scale(1);
+	        transition: 0.4s ease-in-out;
+        }
+    }
+    &__content{
+        border: 1px solid $border-color;
+        @include transition(.3s);
+        &__title{
+           font-size: 24px;
+           font-weight: 500;
+           margin-bottom: 20px;
+           line-height: 1.4;
+           @media #{$xl} {
+            font-size: 20px;
+           }
+           @media #{$lg} {
+            font-size: 18px;
+           }
+           @media #{$md} {
+            font-size: 18px;
+           }
+           @media #{$xs} {
+            font-size: 18px;
+           }
+           @media #{$sm} {
+            font-size: 18px;
+           }
+           @include transition(.3s);
+           &:hover{
+            color: $theme-color;
+           }
+        }
+        & p{
+           margin-bottom: 20px;
+        }
+       
+    & .blog-text {
+        padding: 25px 30px 20px 30px;;
+    }
+    } 
+}
+
+.blog:hover .blog__thumb img {
+	transform: scale(1.1);
+}
+.blog-meta{
+    padding: 12px 0px;
+    border-bottom: 1px solid $border-color;
+   & span {
+        margin-left: 20px;
+        border-right: 1px solid $span-color;
+        padding-right: 20px;
+        font-size: 14px;
+        text-transform: uppercase;
+        @media #{$xl} {
+        padding-right: 10px;
+        margin-left: 10px;
+        }
+        @media #{$lg} {
+            padding-right: 5px;
+            margin-left: 5px;
+            border-right: none;
+            }
+            @media #{$md} {
+                padding-right: 5px;
+                margin-left: 5px;
+            }
+            @media #{$xs} {
+                padding-right: 5px;
+                margin-left: 5px;
+            }
+            @media #{$sm} {
+                padding-right: 5px;
+                margin-left: 5px;
+            }
+        & i{ 
+            margin-right: 10px;
+            color: $theme-color;
+            @media #{$xl} {
+                margin-right: 4px;
+                padding-right: 4px;
+            }
+            @media #{$lg} {
+                margin-right: 4px;
+                padding-right: 4px;  
+            }
+            
+        }
+      }
+      & span:last-child{
+        border-right: none;
+        padding-right: 0px;
+        @media #{$lg} {
+            padding-right: 0px;
+        }
+      }
+      & span:first-child{
+        margin-left: 30px;
+        @media #{$lg} {
+            margin-left: 10px;
+            padding-right: 0px;
+        }
+        @media #{$xs} {
+            margin-left: 5px;
+            
+        }
+      }
+} 
+
+// Blog 2 
+
+.blog-button{
+    text-align: right;
+    @media #{$xs,$sm} {
+        text-align: left;
+     }
+}
+.blog-button .blog-btn {
+    text-align: center;
+	background: transparent;
+	border: 1px solid $theme-color;
+	color: $theme-color;
+    &:hover{
+        background: $theme-color;
+        color: $white;
+    }
+}
+.blog2__content__title{
+    font-size: 24px;
+    @include transition(.3s);
+    &:hover{
+        color: $theme-color;
+    }
+    @media #{$xl} {
+        font-size: 20px;
+     }
+     @media #{$lg,$md} {
+        font-size: 16px;
+        margin-bottom: 20px;
+     }
+     @media #{$xs,$sm} {
+        font-size: 18px;
+        margin-bottom: 15px;
+     }
+}
+.blog-text{
+    & p{
+        @media #{$lg} {
+            font-size: 14px;
+           }
+        @media #{$xs,$sm} {
+          margin-bottom: 15px;
+          font-size: 14px;
+         }
+    }
+}
+.blog2-meta span:last-child i {
+    @media #{$xs,$sm} {
+        margin-left: 10px;
+       }
+	
+}
+.blog2-meta{
+    border-bottom: none;
+    padding: 0px;
+    & span {
+        border-right: 1px solid $span-color;
+        padding-right: 20px;
+        
+    }
+    @media #{$xs,$sm} {
+        margin-top: 20px;
+    }
+}
+.blog2-meta span:first-child {
+    margin-left: 0px;
+    margin-left: 0px;
+    @media #{$lg} {
+       padding-right: 7px;
+     }
+}
+
+.blog__thumb2 {
+    & img {
+        max-width: inherit;
+    }
+    @media #{$lg} {
+        margin-right: 20px;
+        margin-bottom: 30px;
+     }
+}
+
+.blog-2{
+    @media #{$xs,$sm} {
+        display: block !important;
+     }
+}

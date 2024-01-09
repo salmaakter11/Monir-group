@@ -1,0 +1,109 @@
+@import '../scss/variables';
+
+/*----------------------------------------*/
+/*  05. Featurs Css
+/*----------------------------------------*/
+
+
+/*-- 
+    - 
+------------------------------------------*/
+
+.features{
+    &__thumb{
+        overflow: hidden;
+        & img{
+            width: 100%;
+            height: auto;
+            transform: scale(1);
+	        transition: 0.4s ease-in-out;
+        }
+    }
+    &__content{
+        padding: 25px 25px 20px 25px;
+        border: 1px solid #E7EAEF;
+        @include transition(.3s);
+        @media #{$lg} {
+             padding: 20px 20px;
+        }
+        &-title{
+           font-size: 22px;
+           font-weight: 500;
+           margin-bottom: 18px;
+           @include transition(.3s);
+           @media #{$xl} {
+            font-size: 20px;
+            }
+          
+        }
+        & p{
+           margin-bottom: 20px;
+           @include transition(.3s);
+        }
+        & a{
+            font-weight: 500;
+            & i{
+                margin-left: 8px;
+                position: relative;
+                top: 1px;
+                @include transition(.3s);
+              }
+        }
+    }
+    &:hover &__content{
+        background-color: $theme-color;
+        border: 1px solid $theme-color;
+        &-title{
+            color: $white;
+        }
+        & p{
+            color: $white;
+        }
+        & a{
+            color: $white;
+            & i{
+                color: $white;
+              }
+              &:hover i{
+                  margin-left: 10px;;
+              }
+        }
+    }
+   
+}
+.features:hover .features__thumb img {
+	transform: scale(1.1);
+}
+
+// featurs 02
+
+.features2 {
+	padding: 30px 30px 20px 30px;
+	background: #fff;
+	border: 1px solid $border-color;
+    @include transition(.3s);
+    & .read-more i{
+        margin-left: 8px;
+    }
+    &:hover{
+        border: 1px solid $theme-color;
+        & .read-more{
+            color: $theme-color;
+            & i{
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
+.features2{
+    &__title{
+        font-size: 20px;
+    }
+}
+.features2__icon{
+    & i{
+        font-size: 40px;
+        color: $theme-color;
+    }
+}

@@ -1,0 +1,46 @@
+/* CompanySlider.css */
+
+.company-slider-container {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -8px;
+  }
+  
+  .slider-item {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Set the desired height */
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* Set the desired text color */
+  }
+  
+  .title-overlay {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.37); /* Set the desired background color and opacity */
+    border-radius: 10px;
+    max-width: 50%;
+  }
+  
+  .title-overlay h2 {
+    margin: 0;
+    font-size: 24px; /* Set the desired font size */
+    color: #fff;
+  }
+  .title-overlay p {
+    margin: 0;
+    font-size: 12px; /* Set the desired font size */
+    color: #fff;
+  }

@@ -1,0 +1,87 @@
+@import '../scss/variables';
+
+/*----------------------------------------*/
+/*  04. Visa Details Css
+/*----------------------------------------*/
+
+
+/*--
+    - Visa-area
+------------------------------------------*/
+
+.visa__items{
+    border-left: 1px solid $visa-border;
+    @media #{$md} {
+        border-left: 1px solid transparent;
+    }
+    @media #{$xs} {
+        border-left: 1px solid transparent;
+    }
+    @media #{$sm} {
+        border-left: 1px solid transparent;
+    }
+    &-single{
+        padding: 40px 52px;
+        @media #{$xl} {
+            padding: 25px 40px;
+        }
+        @media #{$lg} {
+            padding: 20px 22px;
+        }
+        @media #{$md} {
+            padding: 35px 64px;
+        }
+        @media #{$sm} {
+            padding: 35px 30px;
+        }
+        @include transition(.3s);
+        &-icon{
+            & i{
+                font-size: 50px;
+                color: $white;
+                margin-right: 20px;
+                line-height: 50px;
+                @media #{$xl} {
+                  margin-right: 15px;
+                  font-size: 30px;
+                  line-height: 30px;
+                }
+                @media #{$lg} {
+                  font-size: 30px;
+                  list-style: 30px;
+                  margin-right: 10px;
+                }
+            }
+        }
+        &-title{
+            overflow: hidden;
+            color: $white;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            @media #{$xl} {
+                font-size: 21px;
+            }
+            @media #{$xs} {
+                font-size: 16px;
+            }
+        }
+        &:hover{
+            background: $visa-hover-bg;
+        }
+    }
+}
+
+.br-none{
+    border-left: 1px solid transparent;
+}
+.visa__items:hover{
+    border-left: 1px solid $theme-color;
+}
+
+// Home 2 Visa  
+.visa-top {
+    margin-top: -70px;
+    position: relative;
+    z-index: 1;
+}

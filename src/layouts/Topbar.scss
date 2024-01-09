@@ -1,0 +1,20 @@
+// .submenu {
+//     width: 400px;
+//     max-height: 300px;
+//     overflow-y: auto;
+//     scrollbar-width: thin; /* For Firefox */
+//   }
+  
+  /* For WebKit (Chrome, Safari) */
+  .submenu::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .submenu::-webkit-scrollbar-thumb {
+    background-color: rgba(179, 194, 204, 0.449);
+  }
+  
+  .submenu::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+  }
+  
