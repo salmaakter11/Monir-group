@@ -94,8 +94,7 @@ const TopBar = () => {
                                     <Link to="/"><img src="/assets/img/logo/logo.png" className="img-fluid" alt="img" /></Link>
                                 </div>
                             </div>
-
-
+                            
                             <div className="col-xxl-7 col-xl-7 col-lg-7 col-4 px-0">
                                 <div className="main-menu d-none d-lg-block ">
                                     <nav id="mobile-menu">
@@ -191,8 +190,6 @@ const TopBar = () => {
                                                 </ul>
 
                                                 <a className="mean-expand bg-secondary" onClick={()=>setToggleAbout(!toggleAbout)}  href="#" style={{ fontSize: 20, padding: "7px !important" }}>{toggleAbout ? '-' : '+'}</a>
-                                             
-
 
                                             </li>
 

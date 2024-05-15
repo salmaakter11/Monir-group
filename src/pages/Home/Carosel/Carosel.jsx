@@ -40,14 +40,10 @@ const Carosel = () => {
         return () => clearInterval(intervalId);
     }, [currentSlide])
 
-
-
     return (
         <>
             {isLoading ? <HorizontalLoader /> : ''}
             {isLoading ? <InfinitiScrollLoader /> : ''}
-
-
             <div className="slider">
                 <AiOutlineArrowLeft onClick={prevSlide} className="arrow prev" />
                 <AiOutlineArrowRight onClick={nextSlid} className="arrow next" />
