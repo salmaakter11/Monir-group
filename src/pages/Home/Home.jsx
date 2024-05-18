@@ -18,7 +18,7 @@ const Home = () => {
     <>
       <main>
         <PageTitle title="Home" />
-        
+
         <Suspense fallback={<InfinitiScrollLoader />}>
           <LazyCarosel />
           <LazyMembership />
